@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'gilroy';
+}
+
+.container {
+  display: flex;
+  width: 600px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #ff9e2c 0%, #ff6a00 100%);
+  border-radius: 30px;
+  color: white;
+  padding: 5% 0%;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 30px 30px -5px rgba(0, 0, 0, 0.4);
+  }
+}
+#currDate {
+  font-size: 40px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+input {
+  font-size: 20px;
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid yellow;
+  cursor: pointer;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: yellow;
+  color: black;
+  margin: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(255, 200, 0);
+}
+
+@keyframes zoomInRotate {
+  0% {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) rotate(10deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+#displayAge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 620px;
+  height: 480px;
+  background: linear-gradient(135deg, #ff9e2c 0%, #ff6a00 100%);
+  border-radius: 30px;
+  position: absolute;
+  top: 16%;
+  left: 28%;
+  visibility: hidden;
+  color: white;
+  font-size: 2em;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+#displayAge.animate {
+  animation: zoomInRotate 2s ease-in-out;
+  visibility: visible;
+  transform: scale(1.05);
+  box-shadow: 0px 30px 30px -5px rgba(0, 0, 0, 0.4);
+}
+
+#age {
+  color: white;
+  font-size: 50px;
+  margin: 20px;
+  font-weight: bold;
+}
