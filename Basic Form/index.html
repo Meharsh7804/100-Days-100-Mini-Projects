@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="breadcrumbs">
+            <a href="#">Home</a> > <a href="#">Register</a> > <span>Travel Form</span>
+        </div>
+        <h2><i class="fas fa-plane"></i> Travel Registration</h2>
+        <form id="travelForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Select your destination</option>
+                    <option value="paris">Paris</option>
+                    <option value="new_york">New York</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="sydney">Sydney</option>
+                </select>
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="form-group">
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" name="date" required>
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <input type="submit" value="Submit">
+            <div class="success-message" id="successMessage">
+                Thank you for registering! Your travel plans are set.
+            </div>
+        </form>
+    </div>
+    <script src=""></script>
+</body>
+</html>

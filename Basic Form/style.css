@@ -1,0 +1,120 @@
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+        .form-container::before {
+            content: "";
+            background: url('https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif') no-repeat center center/cover;
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .breadcrumbs {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .breadcrumbs a {
+            text-decoration: none;
+            color: #007bff;
+            margin-right: 5px;
+        }
+        .breadcrumbs span {
+            color: #555;
+        }
+        .form-container h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            color: #007bff;
+            position: relative;
+        }
+        .form-container h2 i {
+            animation: fly 3s infinite;
+        }
+        @keyframes fly {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #555;
+            text-align: left;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="password"],
+        .form-container select,
+        .form-container input[type="date"] {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .form-container input[type="text"]:focus,
+        .form-container input[type="email"]:focus,
+        .form-container input[type="password"]:focus,
+        .form-container select:focus,
+        .form-container input[type="date"]:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+            outline: none;
+        }
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .form-container input[type="submit"]:hover {
+            background: linear-gradient(135deg, #0056b3, #007bff);
+            transform: translateY(-3px);
+        }
+        .form-container .form-group {
+            position: relative;
+        }
+        .form-container .form-group i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+        }
+        .form-container .success-message {
+            display: none;
+            font-size: 1.2rem;
+            color: green;
+            margin-top: 1rem;
+        }
