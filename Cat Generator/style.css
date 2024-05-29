@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    width: 75%;
+    text-align: center;
+}
+
+.container h1{
+    font-size: 28px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+button{
+    padding: 13px 27px;
+    font-size: 19px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.flex-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-box img{
+    margin: 10px;
+    width: 200px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.71);
+}
