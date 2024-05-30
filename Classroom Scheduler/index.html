@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Classroom Scheduler</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="left">
+        <img src="logo.png" alt="Logo" class="logo" />
+        <h1>Class Scheduler</h1>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#"> View your Batches</a>
+        </li>
+      </ul>
+      <div class="searchbox">
+        <input
+          type="search"
+          name="searchBar"
+          id="searchTxt"
+          placeholder="Search for a batch"
+        />
+        <button class="btn">
+          <img src="search.png" alt="Search" class="icon" /> Search Teacher
+        </button>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <h1 class="heading">Schedule your Batch</h1>
+      <label for="title" class="addingNote">Add Batch</label><br />
+      <input type="text" id="title" placeholder="Enter Batch Timing" /><br />
+      <label for="note-text" class="addingNote">Add a Teacher</label><br />
+      <input
+        type="text"
+        id="note-text"
+        placeholder="Enter teacher's name"
+      /><br />
+      <button class="note-btn">Schedule Batch</button>
+
+      <hr class="margin-top hr" />
+      <h1 class="class">Your Classes</h1>
+      <hr class="hr" />
+      <div class="showNotes" id="notes"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
