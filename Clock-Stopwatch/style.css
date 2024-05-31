@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'gilroy';
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: 40px auto;
+}
+
+.circle:hover{
+    cursor: pointer;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-around;
+}
+
+.controls input{
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: black;
+    cursor: pointer;
+}
+
+.controls input:hover{
+    background-color: #e1e1e1;
+}
