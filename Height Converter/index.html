@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Height Converter</h1>
+        <div class="converter">
+            <div class="input-group">
+                <label for="feet">Feet:</label>
+                <input type="number" id="feet" placeholder="0">
+            </div>
+            <div class="input-group">
+                <label for="inches">Inches:</label>
+                <input type="number" id="inches" placeholder="0">
+            </div>
+            <button onclick="convertHeight()">Convert to cm</button>
+            <div class="result">
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
