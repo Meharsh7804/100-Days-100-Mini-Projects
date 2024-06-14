@@ -1,0 +1,92 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f0f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#habit-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#habit-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#habit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.habit-item {
+  background: #f8f9fa;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid #28a745;
+}
+
+.habit-item.completed {
+  text-decoration: line-through;
+  background: #d4edda;
+  border-left: 5px solid #155724;
+}
+
+.habit-item button {
+  background: #dc3545;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.habit-item button:hover {
+  background: #c82333;
+}
+
+.habit-item input[type="checkbox"] {
+  margin-right: 10px;
+}
