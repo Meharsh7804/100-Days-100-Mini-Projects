@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="invoice">
+      <h1>Invoice</h1>
+      <div class="section">
+        <label for="clientName">Client Name:</label>
+        <input type="text" id="clientName" placeholder="Enter client name" />
+      </div>
+      <div class="section">
+        <label for="clientAddress">Client Address:</label>
+        <input
+          type="text"
+          id="clientAddress"
+          placeholder="Enter client address"
+        />
+      </div>
+      <div class="section">
+        <label for="invoiceDate">Date:</label>
+        <input type="date" id="invoiceDate" />
+      </div>
+      <div class="section">
+        <h3>Items</h3>
+        <div id="items">
+          <div class="item">
+            <input
+              type="text"
+              class="item-description"
+              placeholder="Description"
+            />
+            <input type="number" class="item-quantity" placeholder="Quantity" />
+            <input type="number" class="item-price" placeholder="Price" />
+            <button class="remove-item" onclick="removeItem(this)">
+              Remove
+            </button>
+          </div>
+        </div>
+        <button id="addItem">Add Item</button>
+      </div>
+      <div class="section">
+        <h3>Total: $<span id="totalAmount">0.00</span></h3>
+      </div>
+      <button id="downloadPDF">Download PDF</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
