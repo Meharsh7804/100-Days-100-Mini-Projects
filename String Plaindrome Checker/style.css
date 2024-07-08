@@ -1,0 +1,64 @@
+/* Base styles for body to ensure a good looking background and font */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Styling for the container of the input elements */
+.inputBox {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: auto;
+  max-width: 400px;
+}
+
+/* Unified styling for all inputs within .inputBox */
+.inputBox input {
+  border: 2px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  width: calc(
+    100% - 30px
+  ); /* Adjust width to ensure padding does not affect overall width */
+  margin-bottom: 10px; /* Space between inputs */
+}
+
+/* Enhanced focus state for inputs */
+.inputBox input:focus {
+  border-color: #5ad4c3;
+  box-shadow: 0 0 8px #5ad4c3;
+}
+
+/* Styling for the submit button */
+.inputBox #btn {
+  outline: none;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(135deg, #97e5d7 0%, #2fd072 100%);
+  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  width: auto; /* Adjust width to content */
+  margin-left: 1%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for the button to make it more interactive */
+.inputBox #btn:hover {
+  background: linear-gradient(135deg, #2fd072 0%, #97e5d7 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
