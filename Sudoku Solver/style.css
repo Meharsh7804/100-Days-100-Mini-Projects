@@ -1,0 +1,105 @@
+/* General body styling for a clean look */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Styling for the Sudoku container */
+#container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the Sudoku Solver heading */
+.padd {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Sudoku board specific styles */
+#sudoku-board {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+#sudoku-board td {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #f9f9f9;
+}
+
+#sudoku-board tr:nth-child(3n) td {
+  border-bottom: 2px solid #333;
+}
+
+#sudoku-board tr td:nth-child(3n) {
+  border-right: 2px solid #333;
+}
+
+/* Enhancing the visual feedback for editable cells */
+#sudoku-board td[contenteditable="true"]:hover,
+#sudoku-board td[contenteditable="true"]:focus {
+  background-color: #eef;
+  outline: none;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+  #sudoku-board td {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+}
+
+/* Styles for the buttons container */
+.btns {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* General button styling */
+.btns button {
+  background-color: #007bff; /* Blue shade for primary action */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for the 'Solve' button for emphasis */
+#solve-button {
+  background-color: #28a745; /* Green shade for success action */
+}
+
+/* Hover effects for buttons */
+.btns button:hover {
+  opacity: 0.9;
+}
+
+/* Focus styles to improve accessibility */
+.btns button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Clear button specific styling */
+#clear-button {
+  background-color: #dc3545; /* Red shade for cautionary action */
+}
