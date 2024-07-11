@@ -1,0 +1,79 @@
+<!-- Index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+				initial-scale=1.0"
+    />
+    <!-- Linking css file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <!-- Creating the form container -->
+    <div class="container">
+      <h1>Survey Form</h1>
+
+      <!-- Contains error -->
+      <h4 id="errorText"></h4>
+
+      <!-- Form element -->
+      <form id="surveyForm">
+        <label for="name"> Name: </label><br />
+        <input type="text" id="name" name="name" required /><br />
+
+        <label for="age"> Age: </label><br />
+        <input type="number" id="age" name="age" required /><br />
+
+        <label> Favorite type of Sport </label><br />
+        <input type="radio" id="indoor" name="type" value="Indoor" required />
+
+        <label for="indoor"> Indoor </label><br />
+        <input type="radio" id="outdoor" name="type" value="Outdoor" required />
+
+        <label for="outdoor"> Outdoor </label><br />
+        <input type="radio" id="both" name="type" value="Both" required />
+
+        <label for="both"> Both </label><br />
+
+        <label for="favourite-sport"> Favorite Sport to Watch: </label><br />
+        <input
+          type="text"
+          id="favorite-sport"
+          name="favorite-sport"
+          required
+        /><br />
+
+        <label for="favorite--sport"> Favorite Sport to Play: </label><br />
+        <input
+          type="text"
+          id="favorite--sport"
+          name="favorite--sport"
+          required
+        /><br />
+
+        <label for="favorite-sport-person"> Favorite Sports-person: </label
+        ><br />
+        <input
+          type="text"
+          id="favorite-sport-person"
+          name="favorite-sport-person"
+          required
+        /><br />
+
+        <label for="feedback"> Your Thoughts on Sports (optional): </label
+        ><br />
+        <input type="textarea" id="feedback" name="feedback" /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- linking javascript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
