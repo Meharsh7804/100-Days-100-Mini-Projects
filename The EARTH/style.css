@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&family=Orbitron:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@700&display=swap");
+
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  background-image: url(./milky-way-full-stars-space.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 170px;
+}
+
+.nav-item-2 a {
+  margin-left: 60px;
+  margin-right: 60px;
+  font-family: inria Sans;
+  font-size: 2cap;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.nav-item-2 .title {
+  font-family: Orbitron;
+  font-size: 30px;
+  color: aliceblue;
+}
+
+.nav-item-3 {
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item-3 h3 {
+  margin-right: 20px;
+  font-family: inria Sans;
+  font-size: 2cap;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.nav-item-3 img {
+  position: relative;
+  right: 10px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+spline-viewer {
+  position: absolute;
+  right: 100px;
+  bottom: 0px;
+}
+
+.earth-1 {
+  color: aliceblue;
+  font-size: 180px;
+  font-family: Geologica;
+  position: absolute;
+  bottom: 14vh;
+  right: 63vw;
+}
+
+.earth-2 {
+  color: aliceblue;
+  font-size: 180px;
+  font-family: Geologica;
+  position: absolute;
+  bottom: 14vh;
+  left: 61vw;
+  z-index: -2;
+}
+
+.glow {
+  height: 450px;
+  width: 450px;
+  background-color: #5ac0ff;
+  border-radius: 50%;
+  filter: blur(1.5rem);
+  z-index: -5;
+  position: absolute;
+  bottom: 15vh;
+}
+
+table {
+  position: absolute;
+  color: aliceblue;
+  font-family: inria sans;
+  font-size: 25px;
+  bottom: -60px;
+  right: 28vw;
+  border-radius: 5%;
+  border: 3px solid #5ac0ff;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 20px;
+  border-radius: 5%;
+  border: 3px solid #5ac0ff;
+  border-collapse: collapse;
+}

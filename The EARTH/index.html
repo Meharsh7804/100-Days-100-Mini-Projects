@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Earth</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="landing-page">
+      <div class="navbar">
+        <div class="nav-item-1">
+          <img
+            src="search.png"
+            alt="search"
+            style="height: 20px; width: 20px; margin-left: 30px"
+          />
+        </div>
+        <div class="nav-item-2">
+          <a href="">Home</a>
+          <a href="">Gallery</a>
+          <h1 class="title">SPACED</h1>
+          <a href="">Exploration</a>
+          <a href="">Mysteries</a>
+        </div>
+        <div class="nav-item-3">
+          <img src="./stopwatch.png" alt="" style="height: 35px; width: 35px" />
+          <h3>Speed <br />1,000 mph</h3>
+        </div>
+      </div>
+      <div class="main">
+        <h1 class="earth-1">EA</h1>
+        <script
+          type="module"
+          src="https://unpkg.com/@splinetool/viewer@1.0.16/build/spline-viewer.js"
+        ></script>
+        <spline-viewer
+          url="https://prod.spline.design/orV9NzgLtOvsQ3TS/scene.splinecode"
+        ></spline-viewer>
+        <h1 class="earth-2">RTH</h1>
+        <div class="glow"></div>
+      </div>
+      <div class="footer-info">
+        <table>
+          <tr>
+            <td class="info">Water<br />71%</td>
+            <td class="info">Land<br />29%</td>
+            <td class="info">Radius<br />6,371 kms</td>
+            <td class="info">Dist. from Sun<br />147.15 million kms</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="card-section">
+        <div class="card">BOTANICAL<br />BOUNTY</div>
+        <div class="card">WILDLIFE<br />WONDERS</div>
+        <div class="card">HUMAN<br />ODYSSEY</div>
+      </div>
+    </section>
+  </body>
+</html>
