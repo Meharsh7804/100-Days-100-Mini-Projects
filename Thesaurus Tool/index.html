@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thesaurus Tool</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Thesaurus Tool</h1>
+      <input type="text" id="wordInput" placeholder="Enter a word..." />
+      <button id="searchButton">Search</button>
+      <div id="loading" class="hidden">Loading...</div>
+      <div id="results" class="hidden">
+        <section id="synonyms">
+          <h2>Synonyms</h2>
+          <ul id="synonymsList"></ul>
+        </section>
+        <section id="antonyms">
+          <h2>Antonyms</h2>
+          <ul id="antonymsList"></ul>
+        </section>
+        <section id="examples">
+          <h2>Examples</h2>
+          <ul id="examplesList"></ul>
+        </section>
+        <section id="pronunciations">
+          <h2>Pronunciations</h2>
+          <ul id="pronunciationsList"></ul>
+        </section>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
