@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease; /* Smooth transition for all elements */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* More visually appealing font */
+  margin: 0;
+  background: #f0f0f0; /* Softer background */
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: 25px;
+  font-size: 20px;
+  color: #333; /* Darker text for better readability */
+}
+
+.keyboard_wrapper {
+  width: 740px;
+  padding: 25px;
+  border-radius: 20px; /* Slightly larger radius for a softer look */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); /* Smoother shadow */
+  background-color: #ffffff; /* Lighter background for the keyboard wrapper */
+  background-image: linear-gradient(
+    135deg,
+    #abe1e9 0%,
+    #0092fb 74%
+  ); /* Adjusted gradient for a modern look */
+}
+
+.keyboard_wrapper .display {
+  background-color: #e3f2fd; /* Lighter blue for a softer look */
+  position: relative;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 10px; /* Added padding for better spacing */
+  border-radius: 10px; /* Rounded corners for the display */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+}
+.keyboard_wrapper .display::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(45deg, #ffffff52, #0000001a);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.keyboard_wrapper .key {
+  margin-top: 20px;
+  text-transform: lowercase;
+  user-select: none;
+}
+
+.keyboard_wrapper .key .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.keyboard_wrapper .key .row span {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-content: center;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.keyboard_wrapper .key .row span.caps,
+.keyboard_wrapper .key .row span.backspace {
+  width: calc(50px * 1.6);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.keyboard_wrapper .key .row span.space {
+  width: calc(50px * 9.4);
+}
+
+.keyboard_wrapper .key .row span.active,
+.keyboard_wrapper .key .row span:hover {
+  color: orangered;
+}
+
+.keyboard_wrapper .key .row span.active,
+.keyboard_wrapper .key .row span:active {
+  box-shadow: inset 3px 3px 6px #0002, inset -3px -3px 6px #fff;
+}
+
+.keyboard_wrapper .key.uppercase {
+  text-transform: capitalize;
+}
