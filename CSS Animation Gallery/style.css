@@ -1,0 +1,239 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.gallery-container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px; /* Add padding for spacing around the gallery */
+  background-color: #f4f4f4; /* Light background color for contrast */
+  border-radius: 10px; /* Rounded corners for a smoother look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.animation-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Transition Animation */
+.transition-animation {
+  background-color: #3498db;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+.transition-animation:hover {
+  transform: scale(1.2);
+  background-color: #2980b9;
+}
+
+/* Keyframes Animation */
+.keyframes-animation {
+  background-color: #e74c3c;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Transform Animation */
+.transform-animation {
+  background-color: #2ecc71;
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+
+.transform-animation:hover {
+  transform: rotate(360deg);
+}
+
+/* Fade In Animation */
+.fade-in-animation {
+  background-color: #9b59b6;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Pulse Animation */
+.pulse-animation {
+  background-color: #f39c12;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Slide In Animation */
+.slide-in-animation {
+  background-color: #16a085;
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Shake Animation */
+.shake-animation {
+  background-color: #d35400;
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25%,
+  75% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+/* Spin Animation */
+.spin-animation {
+  background-color: #2980b9;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Bounce Animation */
+.bounce-animation {
+  background-color: #8e44ad;
+  animation: bounceAlt 2s infinite;
+}
+
+@keyframes bounceAlt {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+/* Flip Animation */
+.flip-animation {
+  background-color: #c0392b;
+  animation: flip 2s infinite;
+}
+
+@keyframes flip {
+  0%,
+  100% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Zoom In Animation */
+.zoom-in-animation {
+  background-color: #27ae60;
+  animation: zoomIn 2s forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Glow Animation */
+.glow-animation {
+  background-color: #e67e22;
+  box-shadow: 0 0 10px #e67e22;
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #e67e22;
+  }
+  to {
+    box-shadow: 0 0 20px #e67e22;
+  }
+}
+
+/* Wiggle Animation */
+.wiggle-animation {
+  background-color: #2c3e50;
+  animation: wiggle 0.5s infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
