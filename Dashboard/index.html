@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Dashboard</h1>
+      </header>
+      <section class="cards">
+        <div class="card">
+          <h2>Total Users</h2>
+          <p id="total-users">0</p>
+        </div>
+        <div class="card">
+          <h2>New Signups</h2>
+          <p id="new-signups">0</p>
+        </div>
+        <div class="card">
+          <h2>Active Users</h2>
+          <p id="active-users">0</p>
+        </div>
+      </section>
+      <section class="charts">
+        <canvas id="usersChart"></canvas>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
