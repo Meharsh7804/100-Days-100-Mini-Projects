@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Infographic</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="infographic">
+        <img
+          class="poster"
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/827672/Inforgraphic.png"
+        />
+
+        <svg
+          class="blue-planet"
+          viewBox="0 0 159 162"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xml:space="preserve"
+          style="
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            stroke-linejoin: round;
+            stroke-miterlimit: 1.41421;
+          "
+        >
+          <g id="Blue-Planet">
+            <ellipse
+              id="Blue-Outer-Circle"
+              cx="79.44"
+              cy="80.76"
+              rx="79.44"
+              ry="80.76"
+              style="fill: #71cdf4"
+            />
+            <ellipse
+              id="Blue-Inner-Circle-Left"
+              cx="59.04"
+              cy="108.24"
+              rx="17.04"
+              ry="20.16"
+              style="fill: #21bcef"
+            />
+            <ellipse
+              id="Blue-Inner-Circle-Top"
+              cx="62.4"
+              cy="47.76"
+              rx="17.04"
+              ry="20.16"
+              style="fill: #21bcef"
+            />
+            <ellipse
+              id="Blue-Inner-Circle-Right"
+              cx="116.88"
+              cy="80.76"
+              rx="17.04"
+              ry="20.16"
+              style="fill: #21bcef"
+            />
+          </g>
+        </svg>
+
+        <svg
+          class="yellow-planet"
+          viewBox="0 0 159 162"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xml:space="preserve"
+          style="
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            stroke-linejoin: round;
+            stroke-miterlimit: 1.41421;
+          "
+        >
+          <g id="Yellow-Planet">
+            <ellipse
+              v-on:click="updateFill"
+              id="Yellow-Outer-Circle"
+              cx="79.44"
+              cy="80.76"
+              rx="79.44"
+              ry="80.76"
+              v-bind:style="yellowOuterCircleFill"
+            />
+            <ellipse
+              id="Yellow-Inner-Circle-Left"
+              cx="59.04"
+              cy="108.24"
+              rx="17.04"
+              ry="20.16"
+              style="fill: #f9c21c"
+            />
+            <ellipse
+              id="Yellow-Inner-Circle-Top"
+              cx="62.4"
+              cy="47.76"
+              rx="17.04"
+              ry="20.16"
+              style="fill: #f9c21c"
+            />
+            <ellipse
+              id="Yellow-Inner-Circle-Right"
+              cx="116.88"
+              cy="80.76"
+              rx="17.04"
+              ry="20.16"
+              style="fill: #f9c21c"
+            />
+          </g>
+        </svg>
+
+        <svg
+          class="red-planet"
+          viewBox="0 0 159 162"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xml:space="preserve"
+          style="
+            fill-rule: evenodd;
+            clip-rule: evenodd;
+            stroke-linejoin: round;
+            stroke-miterlimit: 1.41421;
+          "
+        >
+          <g id="Red-Planet">
+            <ellipse
+              id="Red-Outer-Circle"
+              cx="79.44"
+              cy="80.76"
+              rx="79.44"
+              ry="80.76"
+              style="fill: #eb4537"
+            />
+            <ellipse
+              id="Red-Inner-Circle-Left"
+              cx="59.04"
+              cy="108.24"
+              rx="17.04"
+              ry="20.16"
+              style="fill: #db2417"
+            />
+            <ellipse
+              id="Red-Inner-Circle-Top"
+              cx="62.4"
+              cy="47.76"
+              rx="17.04"
+              ry="20.16"
+              style="fill: #db2417"
+            />
+            <ellipse
+              id="Red-Inner-Circle-Right"
+              cx="116.88"
+              cy="80.76"
+              rx="17.04"
+              ry="20.16"
+              style="fill: #db2417"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
