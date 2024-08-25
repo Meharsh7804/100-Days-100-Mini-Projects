@@ -1,0 +1,103 @@
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.animation {
+  margin: 20px 0;
+}
+
+/* Typing Effect */
+.typing-text {
+  font-size: 1.5em;
+  color: #333;
+  border-right: 2px solid #333;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
+}
+
+/* Blinking Text */
+.blinking-text {
+  font-size: 1.5em;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Bouncing Letters */
+.bouncing-text {
+  display: inline-block;
+  font-size: 2em;
+  color: #333;
+}
+
+.bouncing-text span {
+  display: inline-block;
+  animation: bounce 0.5s infinite alternate;
+}
+
+.bouncing-text span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.bouncing-text span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.bouncing-text span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.bouncing-text span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.bouncing-text span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-10px);
+  }
+}
