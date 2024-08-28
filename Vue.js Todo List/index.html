@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue.js Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Vue.js To-Do List</h1>
+
+      <input
+        type="text"
+        v-model="newTask"
+        @keyup.enter="addTask"
+        placeholder="Add a new task"
+      />
+
+      <ul>
+        <li v-for="(task, index) in tasks" :key="index">
+          <span v-if="!task.isEditing">{{ task.text }}</span>
+          <input
+            v-if="task.isEditing"
+            type="text"
+            v-model="task.text"
+            @blur="editTask(task)"
+            @keyup.enter="editTask(task)"
+          />
+          <button @click="deleteTask(index)">Delete</button>
+          <button @click="task.isEditing = !task.isEditing">
+            {{ task.isEditing ? 'Save' : 'Edit' }}
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
