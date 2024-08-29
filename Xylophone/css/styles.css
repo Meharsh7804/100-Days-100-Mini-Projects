@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 2px 0 #f44236;
+  color: #ffffff;
+  font-family: 'Zilla Slab', serif;
+  font-size: 5rem;
+}
+
+.set {
+  margin: 50px auto;
+}
+
+.xylo {
+  border-radius: 10%;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 2;
+  margin: 0;
+  outline: none;
+  text-align: center;
+  text-shadow: 3px 0 #DBEDF3;
+  width: 150px;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.w {
+  background-color: #9c26b0;
+  height: 180px;
+}
+
+.o {
+  background-color: #2296f3;
+  height: 220px;
+}
+
+.s {
+  background-color: #049588;
+  height: 260px;
+}
+
+.k {
+  background-color: #4caf50;
+  height: 300px;
+}
+
+.x {
+  background-color: #feeb3b;
+  height: 340px;
+}
+
+.m {
+  background-color: #ff9800;
+  height: 380px;
+}
+
+.b {
+  background-color: #f44236;
+  height: 420px;
+}
+
+.footer {
+  color: #ffffff;
+}
+
+@media (max-width: 1028px) {
+  h1 {
+    font-size: 2rem;
+    text-shadow: 2px 0 #f44236;
+  }
+
+  .xylo {
+    border-radius: 0;
+    font-size: 3rem;
+    font-weight: 900;
+    height: 80px;
+    margin: 0;
+    width: 100%;
+  }
+}
